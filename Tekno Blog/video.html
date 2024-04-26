@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edebiyat Web Sitesi</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="video.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="resim.jpg" class="Logo" alt="logo">
+       
+        
+        <a href="#" class="logo" id="parlayanLogo">
+             15 Temmuz Şehitleri AIHL
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="ana_sayfa.html" style="--i:0;">Ana Sayfa</a>
+            <a href="okulumuz.html" style="--i:1;">Okulumuz</a>
+            <a href="siir.html" style="--i:2;">Şiir</a>
+            <a href="gorsel.html" style="--i:3;">Görsel</a>
+            <a href="video.html" style="--i:4;">Video</a>
+        </nav>
+    </header>
+    <div class="hepsi">
+        <div class="bir">
+           <div class="oynat1">
+            <video width="500px" height="250px" controls loop poster="görsel.jpg">
+               <source src="video11.mp4"  type="video/mp4">
+            </video>
+           </div>
+          
+           <div class="yazi1">
+             <p><i class="fa-solid fa-graduation-cap"></i>Okulumuzun Tanıtım Videosu</p>
+           </div>
+        </div>
+
+        <div class="iki">
+           <div class="oynat2">
+             <video width="500px" height="250px" controls loop poster="görsel.jpg">
+                <source src="Video1.mp4"  type="video/mp4">
+             </video>
+           </div> 
+
+           <div class="yazi2">
+             <p><i class="fa-solid fa-book"></i>Okulumuzun Öğretmenlerle Teknoloji Dersi</p>
+           </div>
+
+        </div>
+
+        <div class="uc">
+          <div class="oynat3">
+            <video width="500px" height="250px" controls loop poster="görsel.jpg">
+               <source src="Video.mp4"  type="video/mp4">
+            </video>
+          </div> 
+
+          <div class="yazi1">
+            <p><i class="fa-solid fa-flag"></i>Okulumuzun 29 Ekim Gösterisi</p>
+          </div>
+
+       </div>
+
+     </div>
+
+
+      
+    <!-- İkinci HTML belgesinden gelen içerik -->
+    <div class="container">
+        <div class="top">
+            <p class="gün"><i class="fa-regular fa-clock"></i> Pazartesi-Cuma : 09:00 - 17:00 </p>
+            <p><i class="fa-solid fa-phone"></i> Telefon: +90 552 847 56 64</p>
+        </div>
+        <hr size="1" color="grey">
+        <div class="titles">
+            <h3>Bize Ulaş</h3>
+            <h3>Yapım Ekibi</h3>
+            <h3>Sosyal Medya</h3>
+        </div>
+        <div class="middle">
+            <div class="location">
+                <p><i class="fa-solid fa-location-dot"></i>Yenibosna Merkez Mahallesi, 1. Asena Sokak No21/1,
+                    Bahçelievler/İstanbul</p>
+                <p class="info"><i class="fa-solid fa-square-envelope"></i>İnfo@aihl15temmuz.k12.tr</p>
+            </div>
+            <div class="supporters">
+                <ul>
+                    <li>Abdullah Duran</li>
+                    <li>Berat Çolak</li>
+                    <li>Ahmet Efe Kılıç</li>
+                </ul>
+            </div>
+            <div class="follow_us">
+                <a href="https://www.instagram.com/aihl15temmuz?igsh=MWkyNTMxOTJreXlhaw==" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a> 
+                <a href="https://twitter.com/Aihl15Temmuz" target="_blank">
+                   <i class="fa-brands fa-twitter"></i> 
+                </a>                 
+                <a href="https://youtube.com/@aihl15temmuz" target="_blank">
+                   <i class="fa-brands fa-youtube"></i>  
+                </a>
+            </div>
+        </div>
+        <hr size="1" color="grey ">
+        <div class="bottom">
+            <p>Copyright &copy; 2024 Bahçelievler 15 Temmuz Şehitleri. AİHL All rights reserved</p>
+        </div>
+    </div>
+    <script src="video.js"></script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+@media only screen and (max-width: 450px){
+    .logo{
+        font-size:12px;
+        margin-left:1px;
+    }
+    .kayan{
+        font-size:40px;
+    }
+    .titles{
+        font-size:15px;
+    }
+    .location{font-size:9px;}
+    
+    .info{
+        margin-right:6px;
+        margin-left:37px;
+    }
+    .bottom{
+        font-size:11px;
+    }
+    .telefon {
+            font-size: 16px;
+        }
+    .gün{
+        font-size:16px;
+    
+    }
+    }
+    
+    .aw-slider
+    {
+      width:800px;
+      height:330px;
+      overflow: hidden;
+      position: relative;
+      justify-content: center;
+      margin-top:25px;
+      margin-left:500px;
+      
+    }
+    .resim1, .resim2, .resim3, .resim4, .resim5
+    {
+      position: absolute;
+      width:800px;
+      height:330px;
+    
+    }
+    .aw-slider > div > a > span{
+      position:absolute;
+      display:table;
+      background-color:black;
+      color:white;
+      right:0;
+      bottom:0;
+      padding:5px 10px;
+    }
+    .resim1{left: 0;}
+    .resim2{left: 800px;}
+    .resim3{left: 1600px;}
+    .resim4{left: 2400px;}
+    .resim5{left: 3200px;}
+    .aw-slider > div
+    {
+      width: 3200px;
+      height: 330px;
+      left:0px;
+      position: absolute;
+      -webkit-animation-duration: 20s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-name: gecisler;
+      -moz-animation-duration: 20s;
+      -moz-animation-iteration-count:infinite;
+      -moz-animation-name: gecisler;
+      -ms-animation-duration: 20s;
+      -ms-animation-iteration-count:infinite;
+      -ms-animation-name: gecisler;
+      animation-duration: 20s;
+      animation-iteration-count:infinite;
+      animation-name: gecisler;
+    }
+    .aw-slider > div  img{
+      opacity: 0.9;
+      filter: alpha(opacity=95);
+    }
+     
+    .aw-slider > div  img:hover{
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+     
+    .aw-slider > div:hover{
+    -webkit-animation-play-state:paused;
+    /* Bu CSS tanımı Chrome 4.0, IE10, Firefox 16, Safari 4, Opera 15 ve üstü versiyonlarda çalışmaktadır*/
+    }
+    
+    
+    @-webkit-keyframes gecisler
+    
+    {
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-800px;}
+      30% {left:-800px;}
+      40% {left:-1600px;}
+      50% {left:-1600px;}
+      60% {left:-2400px;}
+      70% {left:-2400px;}
+      80% {left:-3200px;}
+      90% {left:-3200px;}
+    }
+    @-moz-keyframes gecisler
+    {
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-800px;}
+      30% {left:-800px;}
+      40% {left:-1600px;}
+      50% {left:-1600px;}
+      60% {left:-2400px;}
+      70% {left:-2400px;}
+      80% {left:-3200px;}
+      90% {left:-3200px;}
+    }
+    @-ms-keyframes gecisler
+    {
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-800px;}
+      30% {left:-800px;}
+      40% {left:-1600px;}
+      50% {left:-1600px;}
+      60% {left:-2400px;}
+      70% {left:-2400px;}
+      80% {left:-3200px;}
+      90% {left:-3200px;}
+    }
+    @keyframes gecisler
+    {
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-800px;}
+      30% {left:-800px;}
+      40% {left:-1600px;}
+      50% {left:-1600px;}
+      60% {left:-2400px;}
+      70% {left:-2400px;}
+      80% {left:-3200px;}
+      90% {left:-3200px;}
+    }
+           * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "poppins", sans-serif;
+            }
+    
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 1.3rem 10%;
+                background: rgb(141, 13, 13);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 100;
+                padding:10px 25px;
+                height:100px;
+            }
+    
+            .kayan {
+                font-size: 32px;
+                color: rgb(141, 13, 13);
+                margin-top: 100px;
+                font-family: "Brush Script MT", cursive;
+            }
+    
+            .kayan2 {
+                font-size: 32px;
+                color: rgb(141, 13, 13);
+                margin-top: 80px;
+                font-family: "Brush Script MT", cursive;
+            }
+    
+            .çizgi {
+                background-color: rgb(141, 13, 13);
+                height: 10px;
+                width: 100%;
+                
+            }
+    
+            .header::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgb(141, 13, 13);
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+    
+            .navbar {
+                font-size: 1.15rem;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 2.5rem;
+                transition: color 0.5s ease;
+                background-color: rgb(141, 13, 13);
+                margin-right: 60px;
+            }
+    
+            .navbar a:hover {
+                color: black;
+            }
+    
+            @keyframes glowAnimation {
+                0% {
+                    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+                }
+                50% {
+                    text-shadow: 0 0 12.5px rgba(255, 255, 255, 0.9);
+                }
+                100% {
+                    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+                }
+            }
+            
+    
+            .logo {
+                text-decoration: none;
+                font-family: "Copperplate, Papyrus, fantasy";
+                font-size: 34px;
+                margin-right: 310px;
+                color: white;
+                animation: glowAnimation 4s infinite; /* 4 saniyede bir parlat, sonsuz tekrar */
+            }
+            #check {
+                display: none;
+            }
+            @media only screen and (max-width: 1024px) {
+        #check:checked~.follow_us i {
+            font-size: 15px; /* İstediğiniz küçük boyutu belirtin */
+        }
+    }
+    
+            .navbar a {
+                font-size: 1.15rem;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 2.5rem;
+            }
+        
+            .icons {
+                font-size: 2.8rem;
+                color: #fff;
+                cursor: pointer;
+                display: none;
+                right: 5%;
+                margin-left:0;
+            }
+            @media (max-width: 1024px){
+              .aw-slider{
+                right:500px;
+    
+                
+              }  
+            .resim1,.resim2,.resim3,.resim4,.resim5{
+                width:250px;
+             
+            }
+             
+                
+            }
+    
+            @media (max-width: 1024px) {
+                .icons {
+                    display: inline-flex;
+                }
+                .logo{
+                    font-size:20px;
+                    margin-right: 0;
+                }
+                #check:checked~.navbar {
+            margin-left: 0; /* Eklenen satır: Sol boşluğu sıfırla */
+        }
+                
+                
+    
+                #check:checked~.icons #menu-icon {
+                    display: none;
+                }
+    
+                .icons #close-icon {
+                    display: none;
+                }
+    
+                #check:checked~.icons #close-icon {
+                    display: block;
+                }
+    
+                .navbar {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background: rgb(141, 13, 13);
+                    transition: .3s ease;
+                    overflow: hidden;
+                }
+    
+                #check:checked~.navbar {
+                    height: 17.7rem;
+                }
+    
+                .navbar a {
+                    display: block;
+                    font-size: 1.1rem;
+                    margin: 1.5rem 0;
+                    text-align: center;
+                    transform: translateY(-50px);
+                    transition: .1s ease;
+                    opacity: 0;
+                }
+    
+                #check {
+                    display: none;
+                }
+    
+                #check:checked~.navbar a {
+                    transform: translateY(0);
+                    transition-delay: calc(.15s * var(--i));
+                    opacity: 1;
+                }
+            }
+    
+            .container {
+          font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-color: darkred;
+        padding: 20px;
+        
+        
+    }
+          @media only screen and (max-width: 1024px) {
+            .container {
+                margin-top:5px;
+           
+        }
+    
+           .supporters{
+            font-size:14px;
+           }
+           .top{
+            font-size:23px;
+           }
+           .location{
+            font-size:11px;
+           }
+        
+           
+          }
+         .icons:hover{
+            color:black;
+            transition: .3s ease;
+         }
+    
+    
+            .top {
+                color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                height: 75px;
+            }
+    
+            .top p:nth-child(2) {
+                font-size: 25px;
+                word-spacing: 3px;
+            }
+    
+            .top p:nth-child(1) {
+                word-spacing: 5px;
+                letter-spacing: 2px;
+            }
+    
+            .bottom {
+                color: white;
+                display: flex;
+                height: 35px;
+                justify-content: center;
+                align-items: end;
+            }
+    
+            .titles {
+                color: white;
+                display: flex;
+                flex-direction: row;
+                align-items: end;
+                height: 30px;
+                justify-content: center;
+            }
+    
+            .titles h3 {
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .middle {
+                color: white;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 140px;
+                justify-content: space-around;
+                width: 100%;
+            }
+    
+            .middle .location {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .middle .location p {
+                margin-bottom: 10px;
+            }
+    
+            .middle .location p i { 
+                font-size: large;
+                margin-right: 15px;
+            }
+    
+            .middle .supporters {
+                width: 14%;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+            }
+    
+            .middle .follow_us {
+                width: 11%;
+            }
+    
+            .middle .follow_us .fa-brands {
+                font-size: 35px;
+                margin-right: 10px;
+            }
+            .Logo{
+                width:200px;
+                height:100px;
+              
+                
+            }
+            .follow_us i {
+        display: block;
+        margin-bottom: 10px; /* İhtiyaca göre ayarlayabilirsiniz */
+        margin-left:44px;
+    }
+    .follow_us a {
+        text-decoration: none; /* Link altı çizgisini kaldır */
+        color:white;
+    }
+    
+    .follow_us i:hover {
+        color: black; /* Hover durumunda ikon rengini siyah yap */
+    }
+    
+    
+    
+    .fa-brands.fa-instagram{
+        color:white;
+       
+    }
+    .fa-brands.fa-twitter{
+        color:White;
+        
+    }
+    .fa-brands.fa-youtube{
+        color:white;
+        
+    }
+    @media only screen and (max-width:1024px){
+        .follow_us{
+            margin-right:50px;
+        }
+    }
+    .gün{
+        font-size:23px;
+    }
+    table {
+                width: 100%;
+                border-collapse: collapse;   
+            }
+    
+            table td {
+                box-sizing: border-box;
+                width: 33.33%; /* Her bir resmin genişliği */
+                text-align: center;
+                display: inline-block;
+                vertical-align: top; /* Resim ve metinlerin en üstte hizalanması için eklenmiştir */
+                margin-bottom: 20px; /* Metinler arasında boşluk bırakmak için eklenmiştir */
+            }
+    
+            table td a img {
+                max-width: 100%; /* Resmi genişliğe sığdırma */
+                height: auto; /* Orantılı yükseklik */
+                border: 5px solid rgb(141, 13, 13); /* Sadece resimlere çerçeve ekleme */
+                padding: 10px; /* Çerçeve içinde bir boşluk bırakma */
+                margin-top:130px;
+            }
+            .hey{
+                font-size:24px;
+                background-color: rgb(141, 13, 13);
+                color:white;
+                border-radius: 20px;
+                
+            }
+            @media only screen and (max-width: 1024px) {
+                table td {
+                    width: 100%; /* Ekranın tamamını kaplamak için genişlik ayarını değiştir */
+                    box-sizing: border-box; /* Bu satır eklenmeli */
+        
+                }
+                .info{
+                    margin-left:160px;
+                }
+            }
+            .info{
+                margin-right:160px;
+            }
